@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./blogImages/blogIcon.jpg" />
+    <title>Resto || Complete Responsive Food Website Design</title>
+  </head>
+  <body>
+    <nav class="navbar" id="home">
+      <div class="navbar-container">
+        <img src="./blogImages/navIcon.jpg" alt="nav-image" />
+
+        <ul class="links-container">
+          <li class="nav-list"><a href="#home" class="active">Home</a></li>
+          <li class="nav-list"><a href="#dishes">Dishes</a></li>
+          <li class="nav-list"><a href="#about">About</a></li>
+          <li class="nav-list"><a href="#menu">Menu</a></li>
+          <li class="nav-list"><a href="#review">Review</a></li>
+          <li class="nav-list"><a href="#order">Order</a></li>
+        </ul>
+
+        <ul class="icons-container">
+          <button
+            class="hamburger"
+            aria-expanded="false"
+            aria-label="Toggle menu"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <li class="icon"><i class="fa-solid fa-magnifying-glass"></i></li>
+          <li class="icon"><i class="fa-solid fa-heart"></i></li>
+          <li class="icon"><i class="fa-solid fa-cart-shopping"></i></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="overlay" id="overlay">
+      <input
+        type="search"
+        name="search"
+        id="search"
+        placeholder="search here..."
+      />
+
+      <a href="#">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </a>
+
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+
+    <header class="header">
+      <div class="header-container">
+        <!-- Swiper animation -->
+        <div class="swiper foodSwiper">
+          <div class="swiper-wrapper">
+            <!-- Head 1 -->
+            <div class="swiper-slide header-flex container-lg">
+              <div class="header-item">
+                <div class="special-text">Our Special Dish</div>
+
+                <h1 class="head">Spicy Noodles</h1>
+
+                <p class="head-text gray">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corporis inventore nemo vel exercitationem, ea doloribus.
+                </p>
+
+                <button type="submit" class="bg-primary">
+                  <a href="#order">Order Now</a>
+                </button>
+              </div>
+
+              <img src="./blogImages/noodles.png" alt="Noodles-image" />
+            </div>
+
+            <!-- Head 2 -->
+
+            <div class="swiper-slide header-flex container-lg">
+              <div class="header-item">
+                <div class="special-text">Our Special Dish</div>
+
+                <h1 class="head">Fried Chicken</h1>
+
+                <p class="head-text gray">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corporis inventore nemo vel exercitationem, ea doloribus.
+                </p>
+
+                <button type="submit" class="bg-primary">
+                  <a href="#order">Order Now</a>
+                </button>
+              </div>
+
+              <div class="head-image">
+                <img src="./blogImages/friedChicken.png" alt="friedChicken" />
+              </div>
+            </div>
+
+            <!-- Head 3 -->
+
+            <div class="swiper-slide header-flex container-lg">
+              <div class="header-item">
+                <div class="special-text">Our Special Dish</div>
+
+                <h1 class="head">Hot Pizza</h1>
+
+                <p class="head-text gray">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corporis inventore nemo vel exercitationem, ea doloribus.
+                </p>
+
+                <button type="submit" class="bg-primary">
+                  <a href="#order">Order Now</a>
+                </button>
+              </div>
+
+              <div class="head-image">
+                <img src="./blogImages/HotPizza.png" alt="hotPizza" />
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="dishes" id="dishes">
+      <div class="dishes-container center">
+        <div class="dishes-text grid-text special-text">Our Dishes</div>
+
+        <h2 class="dishes-head text-up">Popular Dishes</h2>
+
+        <div class="dishes-grid grid container-md">
+          <!-- Item 1 -->
+          <div class="grid-item">
+            <img src="./blogImages/chicken-drumstick.jpg" alt="image-1" />
+
+            <div class="grid-details-container">
+              <p class="grid-text">Tasty Food</p>
+
+              <div class="grid-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+
+              <div class="grid-details flex">
+                <div class="grid-price">$15.99</div>
+                <button type="submit" class="bg-primary">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+
+          <div class="grid-item">
+            <img src="./blogImages/tasty-burger.jpg" alt="image-2" />
+
+            <div class="grid-details-container">
+              <p class="grid-text">Tasty Food</p>
+
+              <div class="grid-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+
+              <div class="grid-details flex">
+                <div class="grid-price">$15.99</div>
+                <button type="submit" class="bg-primary">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="grid-item">
+            <img src="./blogImages/french-fries.jpg" alt="image-3" />
+
+            <div class="grid-details-container">
+              <p class="grid-text">Tasty Food</p>
+
+              <div class="grid-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+
+              <div class="grid-details flex">
+                <div class="grid-price">$15.99</div>
+                <button type="submit" class="bg-primary">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="grid-item">
+            <img src="./blogImages/delicious-pizza.jpg" alt="image-4" />
+
+            <div class="grid-details-container">
+              <p class="grid-text">Tasty Food</p>
+
+              <div class="grid-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+
+              <div class="grid-details flex">
+                <div class="grid-price">$15.99</div>
+                <button type="submit" class="bg-primary">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="grid-item">
+            <img src="./blogImages/spong-cake.jpg" alt="image-5" />
+
+            <div class="grid-details-container">
+              <p class="grid-text">Tasty Food</p>
+
+              <div class="grid-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+
+              <div class="grid-details flex">
+                <div class="grid-price">$15.99</div>
+                <button type="submit" class="bg-primary">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="grid-item">
+            <img src="./blogImages/shawarma.png" alt="image-6" />
+
+            <div class="grid-details-container">
+              <p class="grid-text">Tasty Food</p>
+
+              <div class="grid-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+
+              <div class="grid-details flex">
+                <div class="grid-price">$15.99</div>
+                <button type="submit" class="bg-primary">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="about-container container-md">
+        <div class="about-text special-text center">About Us</div>
+
+        <h3 class="about-head text-up center">Why Choose Us</h3>
+
+        <div class="about-grid container-md">
+          <img src="./blogImages/chicken-drumstick.jpg" alt="about-image" />
+
+          <div class="about-content">
+            <div class="about-details text-md center">
+              Best Food In The Country
+            </div>
+            <p class="about-info gray">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+              beatae voluptatum consequatur aut dolorem enim dolor, expedita
+              ipsam asperiores ea nobis placeat? Ullam, dolores a!
+            </p>
+
+            <p class="about-info gray">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptas, tempore?
+            </p>
+
+            <div class="about-setup">
+              <div class="setup">
+                <i class="fa-solid fa-truck-fast"></i>
+
+                <p class="setup-text text-sm">Free Delivery</p>
+              </div>
+
+              <div class="setup">
+                <i class="fa-solid fa-dollar-sign"></i>
+
+                <p class="setup-text text-sm">Easy Payments</p>
+              </div>
+
+              <div class="setup">
+                <i class="fa-solid fa-headset"></i>
+
+                <p class="setup-text text-">24/7 Service</p>
+              </div>
+            </div>
+
+            <button class="about-btn bg-primary">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu" id="menu">
+      <div class="menu-container container-md">
+        <div class="special-text center">Our Menu</div>
+        <h3 class="menu-head text-up center">Today's Speciality</h3>
+
+        <div class="menu-grid grid container-md">
+          <!-- Item 1 -->
+          <div class="grid-item">
+            <img src="./blogImages/menu-cake.jpg" alt="image-1" />
+
+            <div class="grid-details-container">
+              <div class="grid-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+
+              <p class="menu-text text-ms">Delicious Food</p>
+
+              <p class="menu-descript gray">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                nisi nobis. Error molestiae maxime distinctio!
+              </p>
+
+              <div class="menu-details grid-details flex">
+                <div class="grid-price">$15.99</div>
+                <button type="submit" class="bg-primary">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="grid-item">
+            <img src="./blogImages/menu-burger.jpg" alt="image-2" />
+
+            <div class="grid-details-container">
+              <div class="grid-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+
+              <p class="menu-text text-ms">Delicious Food</p>
+
+              <p class="menu-descript gray">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                nisi nobis. Error molestiae maxime distinctio!
+              </p>
+
+              <div class="menu-details grid-details flex">
+                <div class="grid-price">$15.99</div>
+                <button type="submit" class="bg-primary">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="grid-item">
+            <img src="./blogImages/menu-shawarma.jpg" alt="image-3" />
+
+            <div class="grid-details-container">
+              <div class="grid-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+
+              <p class="menu-text text-ms">Delicious Food</p>
+
+              <p class="menu-descript gray">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                nisi nobis. Error molestiae maxime distinctio!
+              </p>
+
+              <div class="menu-details grid-details flex">
+                <div class="grid-price">$15.99</div>
+                <button type="submit" class="bg-primary">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="grid-item">
+            <img src="./blogImages/menu-pasta.jpg" alt="image-4" />
+
+            <div class="grid-details-container">
+              <div class="grid-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+
+              <p class="menu-text text-ms">Delicious Food</p>
+
+              <p class="menu-descript gray">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                nisi nobis. Error molestiae maxime distinctio!
+              </p>
+
+              <div class="menu-details grid-details flex">
+                <div class="grid-price">$15.99</div>
+                <button type="submit" class="bg-primary">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="grid-item">
+            <img src="./blogImages/menu-pizza.jpg" alt="image-5" />
+
+            <div class="grid-details-container">
+              <div class="grid-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+
+              <p class="menu-text text-ms">Delicious Food</p>
+
+              <p class="menu-descript gray">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                nisi nobis. Error molestiae maxime distinctio!
+              </p>
+
+              <div class="menu-details grid-details flex">
+                <div class="grid-price">$15.99</div>
+                <button type="submit" class="bg-primary">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="grid-item">
+            <img src="./blogImages/menu-hotdog.jpg" alt="image-6" />
+
+            <div class="grid-details-container">
+              <div class="grid-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+
+              <p class="menu-text text-ms">Delicious Food</p>
+
+              <p class="menu-descript gray">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                nisi nobis. Error molestiae maxime distinctio!
+              </p>
+
+              <div class="menu-details grid-details flex">
+                <div class="grid-price">$15.99</div>
+                <button type="submit" class="bg-primary">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="review" id="review">
+      <div class="review-container container-md">
+        <div class="special-text center">Customer's Review</div>
+        <h3 class="review-head center text-up">What They Say</h3>
+
+        <div class="swiper reviewSwiper review-grid grid">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <!-- Item 1 -->
+              <div class="review-grid-item">
+                <div class="review-top">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/1.jpg"
+                    alt="review-image 1"
+                  />
+
+                  <div class="review-info">
+                    <h3 class="review-name">John Doe</h3>
+
+                    <div class="grid-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+
+                  <div class="review-quote">
+                    <i class="fa-solid fa-quote-right quote"></i>
+                  </div>
+                </div>
+
+                <p class="gray">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
+                  error voluptatum minima temporibus sequi veniam vitae, dicta
+                  ex nisi nulla.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <!-- Item 2 -->
+              <div class="review-grid-item">
+                <div class="review-top">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/2.jpg"
+                    alt="review-image 2"
+                  />
+
+                  <div class="review-info">
+                    <h3 class="review-name">John Doe</h3>
+
+                    <div class="grid-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+
+                  <div class="review-quote">
+                    <i class="fa-solid fa-quote-right quote"></i>
+                  </div>
+                </div>
+
+                <p class="gray">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
+                  error voluptatum minima temporibus sequi veniam vitae, dicta
+                  ex nisi nulla.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <!-- Item 3 -->
+              <div class="review-grid-item">
+                <div class="review-top">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/1.jpg"
+                    alt="review-image 3"
+                  />
+
+                  <div class="review-info">
+                    <h3 class="review-name">John Doe</h3>
+
+                    <div class="grid-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+
+                  <div class="review-quote">
+                    <i class="fa-solid fa-quote-right quote"></i>
+                  </div>
+                </div>
+
+                <p class="gray">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
+                  error voluptatum minima temporibus sequi veniam vitae, dicta
+                  ex nisi nulla.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <!-- Item 4 -->
+              <div class="review-grid-item">
+                <div class="review-top">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/4.jpg"
+                    alt="review-image 4"
+                  />
+
+                  <div class="review-info">
+                    <h3 class="review-name">John Doe</h3>
+
+                    <div class="grid-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+
+                  <div class="review-quote">
+                    <i class="fa-solid fa-quote-right quote"></i>
+                  </div>
+                </div>
+
+                <p class="gray">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
+                  error voluptatum minima temporibus sequi veniam vitae, dicta
+                  ex nisi nulla.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <!-- Item 5 -->
+              <div class="review-grid-item">
+                <div class="review-top">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/4.jpg"
+                    alt="review-image 5"
+                  />
+
+                  <div class="review-info">
+                    <h3 class="review-name">John Doe</h3>
+
+                    <div class="grid-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+
+                  <div class="review-quote">
+                    <i class="fa-solid fa-quote-right quote"></i>
+                  </div>
+                </div>
+
+                <p class="gray">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
+                  error voluptatum minima temporibus sequi veniam vitae, dicta
+                  ex nisi nulla.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="order" id="order">
+      <div class="order-container container-md center">
+        <div class="special-text">Order Now</div>
+
+        <h3 class="order-head text-up">Free and Fast</h3>
+
+        <div class="order-form">
+          <form class="form" id="form">
+            <div class="input">
+              <div class="order-text">Your Name</div>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="enter your name"
+              />
+            </div>
+            <div class="input">
+              <div class="order-text">Your Number</div>
+              <input
+                type="number"
+                name="num"
+                id="number"
+                placeholder="enter your number"
+              />
+            </div>
+
+            <div class="input">
+              <div class="order-text">Your Order</div>
+
+              <input
+                type="text"
+                name="order"
+                id="takeOrder"
+                placeholder="enter food name"
+              />
+            </div>
+
+            <div class="input">
+              <div class="order-text">Additional Food</div>
+
+              <input
+                type="text"
+                name="order-extra"
+                id="takeExtraOrder"
+                placeholder="extra food "
+              />
+            </div>
+
+            <div class="input">
+              <div class="order-text">How Much</div>
+
+              <input
+                type="number"
+                name="quantity"
+                id="quantity"
+                placeholder="how many orders"
+              />
+            </div>
+
+            <div class="input">
+              <div class="order-text">Date And Time</div>
+
+              <input type="datetime-local" name="date" id="date" />
+            </div>
+
+            <div class="input">
+              <div class="order-text">Your Address</div>
+              <textarea
+                name="address"
+                id="address"
+                placeholder="enter your address"
+              ></textarea>
+            </div>
+
+            <div class="input">
+              <div class="order-text">Your Message</div>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="enter your message"
+              ></textarea>
+            </div>
+          </form>
+          <button class="bg-primary">Order Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <ul class="locations">
+          <h4 class="footer-head">Locations</h4>
+          <li class="location"><a href="#">India</a></li>
+          <li class="location"><a href="#">Japan</a></li>
+          <li class="location"><a href="#">Russia</a></li>
+          <li class="location"><a href="#">USA</a></li>
+          <li class="location"><a href="#">France</a></li>
+        </ul>
+
+        <ul class="quick-links">
+          <h4 class="footer-head">Quick Links</h4>
+          <li class="quick"><a href="#home">Home</a></li>
+          <li class="quick"><a href="#dishes">Dishes</a></li>
+          <li class="quick"><a href="#about">About</a></li>
+          <li class="quick"><a href="#menu">Menu</a></li>
+          <li class="quick"><a href="#review">Review</a></li>
+          <li class="quick"><a href="#order">Order</a></li>
+        </ul>
+
+        <ul class="contact-info">
+          <h4 class="footer-head">Contact Info</h4>
+
+          <li><a href="#">+123-456-789</a></li>
+          <li><a href="#">+111-222-789</a></li>
+          <li><a href="#">johndoe@gmail.com</a></li>
+          <li><a href="#">aisha@gmail.com</a></li>
+          <li><a href="#">david#gmail.com</a></li>
+        </ul>
+
+        <ul class="follow-us">
+          <h4 class="footer-head">Follow Us</h4>
+
+          <li><a href="https://facebook.com">Facebook</a></li>
+          <li><a href="https://twiter.com">Twitter</a></li>
+          <li><a href="https://instagram.com">Instagram</a></li>
+          <li><a href="https://linkedin.com">Linkedin</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-copyright">
+        Copyright @ 2021 By <span class="special-text">John Doe</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
