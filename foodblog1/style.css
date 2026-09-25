@@ -14,6 +14,17 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
+.page-content {
+  /* hide all content */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.page-content.loaded {
+  /* reveal everything once ready */
+  opacity: 1;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -567,6 +578,33 @@ nav .navbar-container {
 .container-md {
   max-width: 1000px;
   margin: 2rem auto;
+}
+
+.loader {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  background: #fff;
+  z-index: 9999;
+  opacity: 1;
+  animation: bounce 0.8s infinite ease-in-out;
+}
+
+.loader.hidden {
+  display: none;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
 }
 
 /* Media Queries */
