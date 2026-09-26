@@ -10,7 +10,6 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
-  overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -270,13 +269,6 @@ nav .navbar-container {
   background: #eee;
 }
 
-.order .order-form {
-  background: #fff;
-  padding: 1rem;
-  width: min(90%, 800px);
-  margin: 2rem auto;
-}
-
 .order .order-text {
   text-align: start;
   margin-bottom: 0.5rem;
@@ -286,8 +278,19 @@ nav .navbar-container {
 .order form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 1rem;
   gap: 1rem;
+  padding: 0.8rem;
+  margin: 1rem 0 0;
+}
+
+.order .input {
+  width: 100%;
+}
+
+.order .order-form {
+  background: #fff;
+  padding-bottom: 0.8rem;
+  max-width: 800px;
 }
 
 .order input {
@@ -295,9 +298,14 @@ nav .navbar-container {
   height: 40px;
   border: none;
   border-radius: 5px;
-  padding: 10px;
+  padding-left: 10px;
   background: #eee;
   font-size: clamp(1rem, calc(4vw + 1rem), 1.1rem);
+}
+
+.order input,
+.order textarea {
+  min-width: 0;
 }
 
 .order textarea#message,
@@ -305,7 +313,7 @@ nav .navbar-container {
   height: 150px;
   width: 100%;
   resize: none;
-  padding: 10px;
+  padding: 10px 0px 0px 10px;
   font-size: clamp(0.85rem, calc(1vw + 0.2rem), 1rem);
   background: #eee;
   border: none;
@@ -321,6 +329,7 @@ nav .navbar-container {
 .order button {
   display: flex;
   justify-content: flex-start;
+  margin-left: 0.6rem;
 }
 
 /* Footer */
@@ -522,22 +531,22 @@ nav .navbar-container {
   color: gray;
 }
 
-#overlay {
-  position: absolute;
+#overlay.overlay {
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   height: 100dvh;
   background: rgba(0, 0, 0, 0.6);
   z-index: 10000;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#overlay input {
-  width: min(90%, 300px);
+#overlay.overlay input {
+  width: min(80%, 300px);
   height: 40px;
   background: transparent;
   border: none;
@@ -547,31 +556,31 @@ nav .navbar-container {
   color: #fff;
 }
 
-#overlay input:focus {
+#overlay.overlay input:focus {
   border: none;
   outline: none;
   border-bottom: 2px solid #ccc;
 }
 
-#overlay input::placeholder {
+#overlay.overlay input::placeholder {
   color: #ccc;
 }
 
-#overlay i {
+#overlay.overlay i {
   font-size: clamp(1.3rem, calc(4vw + 1rem), 1.5rem);
   color: #ccc;
   cursor: pointer;
 }
 
-#overlay i:active {
+#overlay.overlay i:active {
   transform: scale(0.85);
 }
 
-#overlay .fa-xmark {
+#overlay.overlay .fa-xmark {
   position: absolute;
   top: 0;
-  left: 90%;
-  margin: 2.3rem 0;
+  left: 85%;
+  margin: 2.1rem 0;
 }
 
 /* Container */

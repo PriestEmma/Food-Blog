@@ -39,11 +39,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // Hamburger Click
 
   const menu = document.querySelector('button');
-  const media = window.matchMedia('(max-width: 700px)');
   const icon = document.querySelector('.hamburger');
   const i = document.querySelector('.fa-solid');
   const ul = document.querySelector('.links-container');
-  const search = document.querySelector('.icons-container');
+  const search = document.querySelector('[data-action="search"]');
   const overlay = document.getElementById('overlay');
 
   // Adds transition when reloads settles
@@ -51,17 +50,13 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Search Function
   search.addEventListener('click', (e) => {
-    if (
-      e.target.classList.contains('icon') ||
-      e.target.classList.contains('fa-magnifying-glass')
-    ) {
-      overlay.style.display = 'flex';
-    }
+    overlay.classList.add('overlay');
+    console.log(overlay);
   });
 
   function closeSearch(e) {
     if (e.target.classList.contains('fa-xmark')) {
-      overlay.style.display = 'none';
+      overlay.classList.remove('overlay');
     }
   }
 
