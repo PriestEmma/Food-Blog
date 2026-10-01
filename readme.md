@@ -4,11 +4,11 @@ A collection of projects I built while learning full stack web development. Each
 
 ## Projects
 
-| #   | Project                   | Description                                                                                         | Tech                     | Links                                        |
-| --- | ------------------------- | --------------------------------------------------------------------------------------------------- | ------------------------ | -------------------------------------------- |
-| 1   | [🍔 FoodBlog](./foodblog) | Responsive food blog and restaurant landing page with carousels, a menu, reviews, and an order form | HTML, CSS, JS, Swiper.js | [Live Site](https://foodbloga1.netlify.app/) |
-| 2   | Coming soon               |                                                                                                     |                          |                                              |
-| 3   | Coming soon               |                                                                                                     |                          |                                              |
+| #   | Project                    | Description                                                                                         | Tech                     | Links                                        |
+| --- | -------------------------- | --------------------------------------------------------------------------------------------------- | ------------------------ | -------------------------------------------- |
+| 1   | [🍔 FoodBlog](./foodblog1) | Responsive food blog and restaurant landing page with carousels, a menu, reviews, and an order form | HTML, CSS, JS, Swiper.js | [Live Site](https://foodbloga1.netlify.app/) |
+| 2   | Coming soon                |                                                                                                     |                          |                                              |
+| 3   | Coming soon                |                                                                                                     |                          |                                              |
 
 ## 🚧 Upcoming Projects
 
