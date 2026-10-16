@@ -1,7 +1,6 @@
 // Loader
 
 window.addEventListener('load', () => {
-  console.log('This page has finished loading...');
   document.querySelector('.loader').classList.add('hidden');
 
   const body = document.querySelector('.page-content');
