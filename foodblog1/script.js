@@ -1,11 +1,28 @@
 // Loader
 
-window.addEventListener('load', () => {
-  document.querySelector('.loader').classList.add('hidden');
+const loader = document.querySelector('.loader');
+const page = document.querySelector('.page-content');
+const heroImg = document.querySelector('.hero-img');
 
-  const body = document.querySelector('.page-content');
-  body.classList.add('loaded');
-});
+let shown = false;
+
+function showPage() {
+  if (shown) return; // makes sure it only runs once
+  shown = true;
+  loader.classList.add('hidden');
+  page.classList.add('loaded');
+}
+
+// 1. Show the page as soon as the first hero image is ready
+if (heroImg.complete) {
+  showPage();
+} else {
+  heroImg.addEventListener('load', showPage);
+  heroImg.addEventListener('error', showPage); // image failed, don't hang
+}
+
+// 2. Safety net: show the page after 2 seconds no matter what
+setTimeout(showPage, 2000);
 
 window.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.foodSwiper', {

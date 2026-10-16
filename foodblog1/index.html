@@ -12,8 +12,14 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      media="print"
+      onload="this.media = 'all'"
     />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /></noscript>
 
     <link
       rel="stylesheet"
@@ -104,6 +110,7 @@
 
                 <img
                   src="./blogImages/noodles.webp"
+                  class="hero-img"
                   width="500"
                   height="500"
                   fetchpriority="high"
